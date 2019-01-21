@@ -1,0 +1,109 @@
+.tariffs {
+  margin-bottom: 65px;
+}
+
+.tariff {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 865px;
+  justify-content: flex-start;
+}
+
+.tariff__item {
+  text-align: center;
+  margin-bottom: 75px;
+  margin-right: 23px;
+  min-height: 350px;
+  max-width: 273px;
+}
+
+.tariff__item:nth-child(n+4) {
+  margin-bottom: 0;
+}
+
+.tariff__item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.tariff__thumb-wrapper {
+  display: flex;
+  min-height: 167px;
+  margin-bottom: 21px;
+}
+
+.tariff__thumb {
+  position: relative;
+  border-radius: 33px;
+}
+
+.tariff__img {
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 273px;
+  height: 163px;
+}
+
+.tariff-pic {
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.tariff__filter {
+  border-radius: 5px;
+  background-color: #27273e;
+  opacity: 0.85;
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  position: absolute;
+  top: 0;
+  transition: .2s;
+
+}
+
+.tariff__title {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 24px;
+  color: #5dd1f8;
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.2s;
+}
+
+.tariff__img:hover .tariff__filter {
+opacity: 0;
+transition: .5s;
+}
+.tariff__img:hover .tariff__title {
+  opacity: 0;
+  transition: 0.7s;
+}
+
+.tariff__desc {
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+}
+
+.vip__color {
+  color: #ec1e79;
+}
+
+.tariff__price {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.tariff__text {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.5;
+}

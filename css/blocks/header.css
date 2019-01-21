@@ -1,0 +1,37 @@
+.header {
+  background: #27273e;
+  margin-bottom: 49px;
+}
+
+.header_main {
+  margin-bottom: 0;
+}
+
+.header__container {
+  display: flex;
+  position: relative;
+  padding: 5px 20px;
+  flex-wrap: wrap;
+}
+
+.header__col {
+flex: 1;
+display: flex;
+align-items: center;
+}
+
+.header__col_align-right {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.header__col_nav {
+  flex-grow: 1.9;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+.header_prices-layout {
+  margin-bottom: 31px;
+}

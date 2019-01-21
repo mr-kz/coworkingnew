@@ -1,0 +1,149 @@
+.menu {
+  width: 100%;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+.menu__list {
+  display: inline-flex;
+  flex-direction: row;
+  width: 100%;
+ }
+.menu__title {
+  color: #ec1e79;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  text-align: left;
+  transition: .3s; 
+  display: inline-block;
+}
+
+.menu__link {
+  text-decoration: none;
+}
+
+.menu__item {
+  margin-bottom: 15px;
+  margin-right: 91px;
+}
+
+.menu__item_in-header {
+  margin-top: 4px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+
+.menu__item:hover .menu__title {
+  color: #000;
+  transition: .3s;
+}
+
+.menu__item:hover {
+ cursor: pointer;
+}
+
+.menu__icon {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: 20px;
+  height: 18px;
+  padding: 3px;
+  margin-right: 14px;
+}
+
+.menu__icon:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 18px;
+  opacity: 1;
+  transition: .3s;
+}
+
+.menu__icon:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 18px;
+  opacity: 0;
+  transition: .3s;
+}
+
+.menu__icon:after, .menu__icon:before {
+  background-image: url(../../img/menu-sprite.png);
+}
+.menu__icon_main:after{
+  background-position: -47px -10px;
+}
+.menu__icon_main:before,
+.menu__item_active .menu__icon_main:before {
+  background-position: -10px -10px;
+}
+
+.menu__icon_feed:after,
+.menu__item_in-header .menu__icon_feed:before {
+  background-position: -278px -10px;
+}
+.menu__icon_feed:before,
+.menu__item_active .menu__icon_feed:before {
+  background-position: -238px -10px;
+}
+
+.menu__icon_wallet:after,
+.menu__item_in-header .menu__icon_wallet:before {
+  background-position: -160px -10px;
+}
+.menu__icon_wallet:before,
+.menu__item_active .menu__icon_wallet:before {
+  background-position: -121px -10px;
+}
+
+.menu__item_in-header .menu__icon_feed:after {
+  background-position: -318px -10px;
+}
+.menu__item_in-header .menu__icon_wallet:after {
+  background-position: -199px -10px;
+}
+
+.menu__item:hover .menu__icon:after,
+.menu__item_active .menu__icon:after,
+.menu__item_in-header .menu__icon_wallet:before {
+  opacity: 0;   
+  transition: .3s;
+}
+.menu__item:hover .menu__icon:before,
+.menu__item_active .menu__icon:before {
+  opacity: 1;   
+  transition: .3s;
+}
+
+
+.menu__item_in-header .menu__title {
+  color: #fff;
+}
+
+.menu__item_active .menu__title {
+  color: #000;
+}
+
+.menu__item_in-header.menu__item_active .menu__icon_main:after {
+  background-position: -47px -10px;
+  opacity: 1;
+}
+.menu__item_in-header.menu__item_active .menu__title,
+.menu__item_in-header:hover .menu__title {
+  color: #ec1e79;
+  text-decoration: underline;
+}
+
+

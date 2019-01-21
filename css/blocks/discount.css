@@ -1,0 +1,29 @@
+.discount {
+  width: 100%;
+  margin-bottom: 26px;
+  background-image: url(../../img/pattern.png);
+  background-repeat: center center no-repeat;
+  background-color: #27273e;
+  min-height: 174px;
+  margin-top: 2px;/*костыль для соответствия с макетом*/
+}
+
+.discount__container {
+  width: 100%;
+  display: flex;
+}
+
+.discount__text {
+  align-self: center;
+  font-weight: 300;
+  color: #fff;
+  font-size: 18px;
+  line-height: 1.67em;
+  padding: 25px 10px 24px;
+  text-align: center;
+}
+
+.discount-text_pink {
+  font-weight: bold;
+  color: #ec1e79;
+}
